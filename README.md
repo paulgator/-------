@@ -1,1 +1,1 @@
-голдраш огры
+Gold Rush ogres
