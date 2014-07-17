@@ -78,7 +78,7 @@ var jumptime=this.getCooldown("jump");
 var enemy=this.getNearestEnemy();
 var target=0;
 
-if (enemy.gold-this.gold<15) {
+if (enemy.gold-this.gold<15 && this.gold>120) {
     target=getClosestTarget(items,this,enemy);
     } else {
     target=getValuableTarget(items,this,enemy);
@@ -109,3 +109,4 @@ if (jumptime===0 && enemyTarget.bountyGold==5 && getDistance(enemyTarget.pos,ene
                 this.moveXY (60,40);
             }
 }
+
